@@ -1,0 +1,16 @@
+    <div>
+      <h1>Hello, {{ user }}</h1>
+      <div>
+        <p>{{title}} application is running.</p>
+        <hr>
+        <button type="button" class="btn btn-primary"
+          tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Simple demo
+        </button>
+      </div>
+      <ul>
+        <li *ngFor="let user of users">
+        {{user.id}} - {{user.userName}}
+        </li>
+      </ul>
+    </div>
